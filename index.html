@@ -5,6 +5,7 @@
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
+    <script src="https://unpkg.com/fast-levenshtein@2.0.6/levenshtein.js"></script>
     <link rel="stylesheet" href="./assets/index.css" />
   </head>
 
@@ -20,29 +21,241 @@
         <source src="./assets/ejercicio.mp4" />
       </video>
 
-      <button>Play/Pause</button>
+      <button id="play">Play/Pause</button>
+      <button id="mute">Mute/UnMute</button>
+
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore placeat nam ipsam vel similique repellendus doloremque, incidunt et itaque dicta commodi beatae ad nesciunt natus amet ab officiis minus facere!
+      </div>
 
     </main>
 
-    <script>
+    <script type="module" defer src="assets/index.ts"></script>
 
-      const video = document.querySelector("video")
-      const button = document.querySelector("button")
+<!--     <script>
 
-      function MediaPlayer(config) {
-        this.media = config.el;
+
+      console.log(`Esto es this ${this}`)
+
+      function saludar(){
+
+        console.log(`Hola. Soy ${this.name}`)
+
       }
 
-      MediaPlayer.prototype.play = function() {
-        this.media.play();
+      const pepe =  {
+        name: "Pepe",
+        apellido : "Cosa Fea"
       }
 
-      const player = new MediaPlayer({el : video});
+      saludar.call(pepe)
 
-      console.log(player)
+      function caminar(metros, direccion){
+        console.log(`${this.name} caminda ${metros} hacia ${direccion}`)
+      }
 
-      button.onclick = () => player.play();
+      //Realizar la funcion seteando el this y argumentos
+      caminar.call(pepe, 20, "norte")
+
+      //Realizar la funcion con el this y los argumentos en array
+
+      caminar.apply(pepe, [20, "norte"])
+
+      const hola = [1,2,3,4]
+
+      //Realizar la funcion con el this y los argumentos devolviendo la propia funcion
+      //podemos realizar currying con bind
+      caminar.bind(pepe, 20, "norte")()
+      caminar.bind(pepe)(20, "norte")
+
+      Array.prototype.forEach.call(hola,
+      (x) => {
+        console.log(x)
+      }
+
+      )
 
     </script>
+
+    <script>
+
+      const heroMethods = {
+        saludar: function(){
+
+          console.log(`Hola soy : ${this.name}`)
+
+        }
+      }
+
+      function Hero(name){
+        const hero = {
+          name : name
+        }
+
+        hero.saludar = heroMethods.saludar;
+
+        return hero
+
+      }
+
+      const zelda = new Hero('Zelda')
+
+      zelda.saludar()
+
+
+
+    </script>
+
+    <script>
+
+      /*
+
+      Proxy how to use it
+
+      */
+
+
+      const target = {
+        red : "Rojo",
+        green : "Verde",
+        blue : "Azul"
+      }
+
+      const handler = {
+        get(obj, prop){
+          if(prop in obj){
+            return obj[prop]
+          }
+
+          const suggestionn = Object.keys(obj).find(key =>
+            Levenshtein.get(key, prop) <= 3
+            
+          )
+
+          if(suggestion)
+            console.log(`Quisiste decir alomejor ${suggestionn}`)
+
+          return obj[prop]
+        }
+      }
+
+      var p = new Proxy(target, handler)
+
+    </script>
+
+    <script>
+      /*
+
+        Generadores en JS
+
+      */
+
+
+        function* simpleGenerator(){
+
+          yield 1; 
+          yield 2; 
+          yield 3; 
+
+        }
+
+        function* idMaker(){
+
+            let id = 1;
+            while(true){
+              id++;
+              yield id;
+            }
+
+
+        }
+
+        function* idMakerWithReset(){
+
+            let id = 1;
+            let reset;
+
+            while(true){
+              reset = yield id;
+              if(reset){
+                id = 1
+              }else{
+                id++;
+                yield id;
+              }
+            }
+
+
+        }
+
+        const  gen = simpleGenerator()
+
+
+    </script>
+ -->
   </body>
 </html>
